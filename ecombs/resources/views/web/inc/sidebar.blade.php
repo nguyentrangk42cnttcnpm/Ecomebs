@@ -2,7 +2,7 @@
 <div class="mobile-nav">
     <!-- Navbar Brand -->
     <div class="amado-navbar-brand">
-        <a href="index.php"><img src="./assets/img/core-img/logo.png" alt=""></a>
+        <a href="index.php"><img src="../../assets/img/core-img/logo.png" alt=""></a>
     </div>
     <!-- Navbar Toggler -->
     <div class="amado-navbar-toggler">
@@ -18,14 +18,14 @@
     </div>
     <!-- Logo -->
     <div class="logo">
-        <a href="index.php"><img src="./assets/img/core-img/logo.png" alt=""></a>
+        <a href="index.php"><img src="../../assets/img/core-img/logo.png" alt=""></a>
     </div>
     <!-- Amado Nav -->
     <nav class="amado-nav">
         <ul>
-            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><a href="">Shop</a></li>
-            <li><a href="{{ route('web.product') }}">Product</a></li>
+            <li class="active"><a href="">Product</a></li>
             <li><a href="">Cart</a></li>
             <li><a href="">Checkout</a></li>
         </ul>
@@ -37,9 +37,9 @@
     </div>
     <!-- Cart Menu -->
     <div class="cart-fav-search mb-100">
-        <a href="cart.php" class="cart-nav"><img src="./assets/img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-        <a href="#" class="fav-nav"><img src="./assets/img/core-img/favorites.png" alt=""> Favourite</a>
-        <a href="#" class="search-nav"><img src="./assets/img/core-img/search.png" alt=""> Search</a>
+        <a href="cart.php" class="cart-nav"><img src="../../assets/img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
+        <a href="#" class="fav-nav"><img src="../../assets/img/core-img/favorites.png" alt=""> Favourite</a>
+        <a href="#" class="search-nav"><img src="../../assets/img/core-img/search.png" alt=""> Search</a>
     </div>
     <!-- Social Button -->
     <div class="social-info d-flex justify-content-between">
