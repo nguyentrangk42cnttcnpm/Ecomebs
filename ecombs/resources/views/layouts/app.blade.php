@@ -16,11 +16,41 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .content-amado{
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8be8cf), color-stop(100%,#cdeb8b)) !important;
+        }
+        .navbar-amado{
+            background-color: #000 !important;
+        }
+        .navbar-li-amado {
+            font-size: 20px !important;
+            color: #fff !important;
+            font-weight: bold !important;
+        }
+        .header-name{
+            font-size: 20px !important;
+            color: #fff !important;
+            background-color: #526270 !important;
+        }
+        .btn-login{
+            width: 150px !important;
+        }
+        .btn-register{
+            width: 100% !important;
+        }
+    </style>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm navbar-amado">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="/assets/img/core-img/logo2.png" alt="">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -42,13 +72,14 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
+                                    <a class="nav-link navbar-li-amado" href="{{ route('login') }}">{{ __('Login') }}</a>
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link navbar-li-amado" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -74,10 +105,12 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
+        <main class="py-4 content-amado">
             @yield('content')
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

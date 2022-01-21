@@ -56,7 +56,7 @@
     margin: 5px 0;
     color: #ffffff;
     background-color: #22af73;
-    border-color: #22af73
+    border-color: #22af73;
 }
 .hb-cta-button {
     opacity: 1;

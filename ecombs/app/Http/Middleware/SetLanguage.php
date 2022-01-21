@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Foundation\Application;
 
 class SetLanguage
-{   
+
+{
     private $app;
-    public function __construct(Application $app){
+    public function __construct(Application $app) {
         $this->app = $app;
     }
     /**
